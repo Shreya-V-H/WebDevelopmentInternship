@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Quiz Application</title> <!-- Set the title of the page -->
+    <link rel="stylesheet" href="style.css"> <!-- Link the CSS file -->
+   
+</head>
+<body>
+   
+    <!-- Start screen -->
+    <div class="start">
+        <h2>Welcome to Java Quiz</h2>
+        <span>Instructions for Users
+            <ol>
+                <li>Read the question carefully before selecting an answer.</li>
+                <li>Quiz time is 30 seconds. Manage your time wisely.</li>
+                <li>Click the "Submit" button to confirm your answer and move to the next question.</li>
+                <li>Try to answer all questions, even if you're unsure. There's no penalty for incorrect answers.</li>
+            </ol>
+        </span>
+        <button id="startBtn">Start</button> <!-- Start button -->
+        
+    </div>
+    
+    <!-- Quiz container -->
+    <div class="container" style="display: none;">
+        <h1>Quiz on JAVA</h1> <!-- Quiz title -->
+        <div class="quiz-container" id="quiz">
+            <div class="quiz-header">
+                <div class="timer">Time left: <span id="time">30</span></div> <!-- Timer display -->
+                <h3 id="question">Question Text</h3> <!-- Question display -->
+                <ul>
+                    <li>
+                        <input type="radio" name="answer" id="a" class="answer">
+                        <label for="a" id="a_text">Answer</label> <!-- Answer option A -->
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="b" class="answer">
+                        <label for="b" id="b_text">Answer</label> <!-- Answer option B -->
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="c" class="answer">
+                        <label for="c" id="c_text">Answer</label> <!-- Answer option C -->
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="d" class="answer">
+                        <label for="d" id="d_text">Answer</label> <!-- Answer option D -->
+                    </li>
+                </ul>
+                <button id="submit">Submit</button> <!-- Submit button -->
+            </div>
+        </div>
+    </div>
+    
+   
+</body>
+<script src="script.js"></script>    <!-- Link the JavaScript file -->
+</html>
