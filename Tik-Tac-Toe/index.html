@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tik-tac-toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main container for the game -->
+    <div class="container" >
+        <!-- Game title -->
+        <h1>Tik-Tac-Toe</h1>
+        
+        <!-- Grid for the game -->
+        <div class="grid" id="grid">
+            <!-- Display whose turn it is -->
+            <span id="turn">X's turn</span>
+            
+            <!-- Rows of the grid -->
+            <div class="row">
+                <!-- Columns of the grid -->
+                <div onclick="handleClick(this)" id="0" class="col"></div>
+                <div onclick="handleClick(this)" id="1" class="col"></div>
+                <div onclick="handleClick(this)" id="2" class="col"></div>
+            </div>
+            <div class="row">
+                <div onclick="handleClick(this)" id="3" class="col"></div>
+                <div onclick="handleClick(this)" id="4" class="col"></div>
+                <div onclick="handleClick(this)" id="5" class="col"></div>
+            </div>
+            <div class="row">
+                <div onclick="handleClick(this)" id="6" class="col"></div>
+                <div onclick="handleClick(this)" id="7" class="col"></div>
+                <div onclick="handleClick(this)" id="8" class="col"></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Include the game logic script -->
+    <script src="script.js"></script>
+  </body>
+
+</html>
